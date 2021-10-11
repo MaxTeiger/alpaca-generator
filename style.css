@@ -1,0 +1,15 @@
+body {
+    background: rgb(187,187,187);
+    background: linear-gradient(90deg, rgba(187,187,187,1) 0%, rgba(144,145,145,1) 100%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-weight: lighter;
+}
+
+img {
+    left: 500px; 
+    top: 200px; 
+    position: fixed;
+}
