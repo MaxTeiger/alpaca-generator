@@ -11,37 +11,53 @@
 </head>
 
 <body>
-    <h1>Alpacas Image Generator <span>Max Teiger</span></h1>
-
-    <h2> Avatar </h2>
-    <div id="avatar">
-        <img src="img/backgrounds/blue50.png" alt="Background" id="Layer1">
-        <img src="img/neck/bend-backward.png" alt="neck" id="Layer2">
-        <img src="img/nose.png" alt="nose" id="Layer3">
-        <img src="img/mouth/astonished.png" alt="mouth" id="Layer4">
-        <img src="img/leg/bubble-tea.png" alt="leg" id="Layer5">
-        <img src="img/eyes/angry.png" alt="eyes" id="Layer7">
-        <img src="img/ears/default.png" alt="ears" id="Layer8">
-        <img src="img/hair/default.png" alt="hair" id="Layer6">
-        <img src="img/accessories/earings.png" alt="accessories" id="Layer9">
+    <div class="container">
+        <div class="Page-title">
+            <h1>Alpacas Image Generator <span>Max Teiger</span></h1>
+        </div>
+        <div class="Avatar">
+            <img src="img/backgrounds/blue50.png" alt="Background" id="Layer1">
+            <img src="img/neck/bend-backward.png" alt="neck" id="Layer2">
+            <img src="img/nose.png" alt="nose" id="Layer3">
+            <img src="img/mouth/astonished.png" alt="mouth" id="Layer4">
+            <img src="img/leg/bubble-tea.png" alt="leg" id="Layer5">
+            <img src="img/eyes/angry.png" alt="eyes" id="Layer7">
+            <img src="img/ears/default.png" alt="ears" id="Layer8">
+            <img src="img/hair/default.png" alt="hair" id="Layer6">
+            <img src="img/accessories/earings.png" alt="accessories" id="Layer9">
+        </div>
+        <div class="Primary-Buttons">
+          <div class="Title">
+            <h2> Attributes</h2>
+          </div>
+          <div class="Buttons-in">
+            <ul id="attributes_list">
+                <li><button id="selected_button">backgrounds</button></li>
+                <li><button id=unselected_button>ears</button></li>
+                <li><button id=btn_eyes>eyes</button></li>
+                <li><button id=btn_hair>hair</button></li>
+                <li><button id=btn_accessories>accessories</button></li>
+                <li><button id=btn_leg>leg</button></li>
+                <li><button id=btn_mouth>mouth</button></li>
+                <li><button id=btn_neck>neck</button></li>
+                <li><button>Random</button></li>
+            </ul>
+          </div>
+        </div>
+        <div class="Secondary-buttons">
+          <div class="Title-2">
+            <h2> Attribute caracteristics </h2>
+          </div>
+          <div class="S-Buttons-in">
+            <ul id="caracteristics_list"></ul>
+          </div>
+        </div>
+        <div class="Footer">
+          <div class="Margin"></div>
+          <div class="credits"></div>
+        </div>
     </div>
-    <button>Random</button>
 
-    <h2> Attributes</h2>
-    <ul id="attributes_list">
-        <button id=btn_background>backgrounds</button>
-        <button id=btn_ears>ears</button>
-        <button id=btn_eyes>eyes</button>
-        <button id=btn_hair>hair</button>
-        <button id=btn_accessories>accessories</button>
-        <button id=btn_leg>leg</button>
-        <button id=btn_mouth>mouth</button>
-        <button id=btn_neck>neck</button>
-    </ul>
-
-    <h2> Attribute caracteristics </h2>
-    <ul id="caracteristics_list">
-    </ul>
     <script src="scripts/main.js"></script>
 
 </body>

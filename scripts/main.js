@@ -24,6 +24,11 @@ let backgroundImages = {
   "Yellow 70": "yellow70.png",
 }
 
+var fs = require('fs');
+var files = fs.readdirSync('img/backgrounds');
+console.log(files);
+
+
 // Attributes Buttons
 let backgroundButton = document.querySelector('#btn_background');
 let earsButton = document.querySelector('#btn_ears');
