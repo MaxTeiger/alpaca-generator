@@ -1,4 +1,4 @@
-let bckImgPath = "img/backgrounds/"
+let bckImgPath = "img/backgrounds/";
 let backgroundImages = {
   "Blue 50": "blue50.png",
   "Blue 60": "blue60.png",
@@ -22,39 +22,38 @@ let backgroundImages = {
   "Yellow 50": "yellow50.png",
   "Yellow 60": "yellow60.png",
   "Yellow 70": "yellow70.png",
-}
+};
 
-var fs = require('fs');
-var files = fs.readdirSync('img/backgrounds');
+var fs = require("fs");
+var files = fs.readdirSync("img/backgrounds");
 console.log(files);
 
-
 // Attributes Buttons
-let backgroundButton = document.querySelector('#btn_background');
-let earsButton = document.querySelector('#btn_ears');
-let accessoriesButton = document.querySelector('#btn_accessories');
-let eyesButton = document.querySelector('#btn_eyes');
-let hairButton = document.querySelector('#btn_hair');
-let legButton = document.querySelector('#btn_leg');
-let mouthButton = document.querySelector('#btn_mouth');
-let neckButton = document.querySelector('#btn_neck');
+let backgroundButton = document.querySelector("#btn_background");
+let earsButton = document.querySelector("#btn_ears");
+let accessoriesButton = document.querySelector("#btn_accessories");
+let eyesButton = document.querySelector("#btn_eyes");
+let hairButton = document.querySelector("#btn_hair");
+let legButton = document.querySelector("#btn_leg");
+let mouthButton = document.querySelector("#btn_mouth");
+let neckButton = document.querySelector("#btn_neck");
 
 // Images layers
-let bckImage = document.querySelector('#Layer1')
-let neckImage = document.querySelector('#Layer2')
-let noseImage = document.querySelector('#Layer3')
-let mouthImage = document.querySelector('#Layer4')
-let legImage = document.querySelector('#Layer5')
-let eyesImage = document.querySelector('#Layer6')
-let earsImage = document.querySelector('#Layer7')
-let hairImage = document.querySelector('#Layer8')
-let accessoriesImage = document.querySelector('#Layer9')
+let bckImage = document.querySelector("#Layer1");
+let neckImage = document.querySelector("#Layer2");
+let noseImage = document.querySelector("#Layer3");
+let mouthImage = document.querySelector("#Layer4");
+let legImage = document.querySelector("#Layer5");
+let eyesImage = document.querySelector("#Layer6");
+let earsImage = document.querySelector("#Layer7");
+let hairImage = document.querySelector("#Layer8");
+let accessoriesImage = document.querySelector("#Layer9");
 
-backgroundButton.onclick = function() {
-    let mySrc = bckImage.getAttribute('src');
-    if(mySrc === 'img/backgrounds/blue50.png') {
-      bckImage.setAttribute('src','img/backgrounds/blue50.png');
-    } else {
-      bckImage.setAttribute('src','img/backgrounds/blue50.png');
-    }
-}
+backgroundButton.onclick = function () {
+  let mySrc = bckImage.getAttribute("src");
+  if (mySrc === "img/backgrounds/blue50.png") {
+    bckImage.setAttribute("src", "img/backgrounds/blue50.png");
+  } else {
+    bckImage.setAttribute("src", "img/backgrounds/blue50.png");
+  }
+};
