@@ -10,51 +10,193 @@
   </head>
 
   <body>
-    <div class="container">
-      <div class="Page-title">
-        <h1>Alpacas Image Generator <span>Max Teiger</span></h1>
+    <div class="page-title">
+      <h1>Alpacas Image Generator</h1>
+    </div>
+    <div class="container-main">
+      <div class="avatar">
+        <img
+          src="img/backgrounds/blue50.png"
+          alt="background"
+          class="background"
+        />
+        <img src="img/neck/default.png" alt="neck" class="neck" />
+        <img src="img/nose.png" alt="nose" class="nose" />
+        <img src="img/mouth/default.png" alt="mouth" class="mouth" />
+        <img src="img/ears/default.png" alt="ears" class="ears" />
+        <img src="img/hair/default.png" alt="hair" class="hair" />
+        <img src="img/leg/default.png" alt="leg" class="leg" />
+        <img src="img/eyes/default.png" alt="eyes" class="eyes" />
+        <img
+          src="img/accessories/earings.png"
+          alt="accessories"
+          class="accessories no-disp"
+        />
       </div>
-      <div class="Avatar">
-        <img src="img/backgrounds/blue50.png" alt="Background" id="Layer1" />
-        <img src="img/neck/bend-backward.png" alt="neck" id="Layer2" />
-        <img src="img/nose.png" alt="nose" id="Layer3" />
-        <img src="img/mouth/astonished.png" alt="mouth" id="Layer4" />
-        <img src="img/leg/bubble-tea.png" alt="leg" id="Layer5" />
-        <img src="img/eyes/angry.png" alt="eyes" id="Layer7" />
-        <img src="img/ears/default.png" alt="ears" id="Layer8" />
-        <img src="img/hair/default.png" alt="hair" id="Layer6" />
-        <img src="img/accessories/earings.png" alt="accessories" id="Layer9" />
-      </div>
-      <div class="Primary-Buttons">
-        <div class="Title">
-          <h2>Attributes</h2>
+      <div class="alpaca-buttons">
+        <div class="primary-buttons">
+          <div class="Title">
+            <h2>Attributes</h2>
+          </div>
+          <div class="buttons-in">
+            <ul class="attributes_list">
+              <li>
+                <button id="backgrounds" class="primary_button">
+                  Backgrounds
+                </button>
+              </li>
+              <li><button id="ears" class="primary_button">Ears</button></li>
+              <li><button id="eyes" class="primary_button">Eyes</button></li>
+              <li><button id="hair" class="primary_button">Hair</button></li>
+              <li>
+                <button id="accessories" class="primary_button">
+                  Accessories
+                </button>
+              </li>
+              <li><button id="leg" class="primary_button">Leg</button></li>
+              <li><button id="mouth" class="primary_button">Mouth</button></li>
+              <li><button id="neck" class="primary_button">Neck</button></li>
+            </ul>
+          </div>
         </div>
-        <div class="Buttons-in">
-          <ul id="attributes_list">
-            <li><button id="selected_button">backgrounds</button></li>
-            <li><button id="unselected_button">ears</button></li>
-            <li><button id="btn_eyes">eyes</button></li>
-            <li><button id="btn_hair">hair</button></li>
-            <li><button id="btn_accessories">accessories</button></li>
-            <li><button id="btn_leg">leg</button></li>
-            <li><button id="btn_mouth">mouth</button></li>
-            <li><button id="btn_neck">neck</button></li>
-            <li><button>Random</button></li>
-          </ul>
+        <div class="secondary-buttons">
+          <div class="title-2">
+            <h2>Attribute caracteristics</h2>
+          </div>
+          <div class="button-list-in">
+            <div
+              class="button-container style-accessories collapsed"
+              id="style-backgrounds"
+              data-menu="backgrounds"
+            >
+              <button class="style-btn" data-name="blue50">Blue 50</button>
+              <button class="style-btn" data-name="blue60">Blue 60</button>
+              <button class="style-btn" data-name="blue70">Blue 70</button>
+              <button class="style-btn" data-name="darkblue30">
+                Dark Blue 30
+              </button>
+              <button class="style-btn" data-name="darkblue50">
+                Dark Blue 50
+              </button>
+              <button class="style-btn" data-name="darkblue70">
+                Dark Blue 70
+              </button>
+              <button class="style-btn" data-name="green50">Green 50</button>
+              <button class="style-btn" data-name="green60">Green 60</button>
+              <button class="style-btn" data-name="green70">Green 70</button>
+              <button class="style-btn" data-name="grey40">Grey 40</button>
+              <button class="style-btn" data-name="grey70">Grey 70</button>
+              <button class="style-btn" data-name="grey80">Grey 80</button>
+              <button class="style-btn" data-name="red50">red 50</button>
+              <button class="style-btn" data-name="red60">red 60</button>
+              <button class="style-btn" data-name="red70">red 70</button>
+              <button class="style-btn" data-name="yellow50">Yellow 50</button>
+              <button class="style-btn" data-name="yellow60">Yellow 60</button>
+              <button class="style-btn" data-name="yellow70">Yellow 70</button>
+            </div>
+            <div
+              class="button-container style-accessories collapsed"
+              id="style-hair"
+              data-menu="hair"
+            >
+              <button class="style-btn" data-name="default">default</button>
+              <button class="style-btn" data-name="bang">Bang</button>
+              <button class="style-btn" data-name="curls">Curls</button>
+              <button class="style-btn" data-name="elegant">Elegant</button>
+              <button class="style-btn" data-name="fancy">Fancy</button>
+              <button class="style-btn" data-name="quiff">Quiff</button>
+              <button class="style-btn" data-name="short">Short</button>
+            </div>
+            <div
+              class="button-container style-accessories collapsed"
+              id="style-eyes"
+              data-menu="eyes"
+            >
+              <button class="style-btn" data-name="default">default</button>
+              <button class="style-btn" data-name="angry">Angry</button>
+              <button class="style-btn" data-name="naughty">Naughty</button>
+              <button class="style-btn" data-name="panda">Panda</button>
+              <button class="style-btn" data-name="smart">Smart</button>
+              <button class="style-btn" data-name="star">Star</button>
+            </div>
+            <div
+              class="button-container style-accessories collapsed"
+              id="style-ears"
+              data-menu="ears"
+            >
+              <button class="style-btn" data-name="default">default</button>
+              <button class="style-btn" data-name="tilt-backward">
+                Tilt Backward
+              </button>
+              <button class="style-btn" data-name="tilt-forward">
+                Tilt Forward
+              </button>
+            </div>
+            <div
+              class="button-container style-accessories collapsed"
+              id="style-neck"
+              data-menu="neck"
+            >
+              <button class="style-btn" data-name="default">default</button>
+              <button class="style-btn" data-name="bend-backward">
+                Bend Backward
+              </button>
+              <button class="style-btn" data-name="bend-forward">
+                Bend Forward
+              </button>
+              <button class="style-btn" data-name="thick">Thick</button>
+            </div>
+            <div
+              class="button-container style-accessories collapsed"
+              id="style-mouth"
+              data-menu="mouth"
+            >
+              <button class="style-btn" data-name="default">default</button>
+              <button class="style-btn" data-name="astonished">
+                Astonished
+              </button>
+              <button class="style-btn" data-name="eating">Eating</button>
+              <button class="style-btn" data-name="laugh">Laugh</button>
+              <button class="style-btn" data-name="tongue">Tongue</button>
+            </div>
+            <div
+              class="button-container style-accessories collapsed"
+              id="style-leg"
+              data-menu="leg"
+            >
+              <button class="style-btn" data-name="default">default</button>
+              <button class="style-btn" data-name="bubble-tea">
+                Bubble Tea
+              </button>
+              <button class="style-btn" data-name="cookie">Cookie</button>
+              <button class="style-btn" data-name="game-console">
+                Game Console
+              </button>
+              <button class="style-btn" data-name="tilt-backward">
+                Tilt Backward
+              </button>
+              <button class="style-btn" data-name="tilt-forward">
+                Tilt Forward
+              </button>
+            </div>
+            <div
+              class="button-container style-accessories collapsed"
+              id="style-accessories"
+              data-menu="accessories"
+            >
+              <button class="style-btn" data-name="flower">Flower</button>
+              <button class="style-btn" data-name="earings">Earings</button>
+              <button class="style-btn" data-name="glasses">Glasses</button>
+              <button class="style-btn" data-name="headphone">Headphone</button>
+              <button class="style-btn" data-name="none">None</button>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="Secondary-buttons">
-        <div class="Title-2">
-          <h2>Attribute caracteristics</h2>
-        </div>
-        <div class="S-Buttons-in">
-          <ul id="caracteristics_list"></ul>
-        </div>
-      </div>
-      <div class="Footer">
-        <div class="Margin"></div>
-        <div class="credits"></div>
-      </div>
+    </div>
+    <div class="footer">
+      <div class="margin"></div>
+      <div class="credits"></div>
     </div>
 
     <script src="scripts/main.js"></script>

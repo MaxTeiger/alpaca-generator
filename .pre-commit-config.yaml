@@ -23,7 +23,7 @@ repos:
     rev: "v2.4.1"
     hooks:
       - id: prettier
-  - repo: https://github.com/pre-commit/mirrors-eslint
-    rev: "v8.1.0"
-    hooks:
-      - id: eslint
+  # - repo: https://github.com/pre-commit/mirrors-eslint
+  #   rev: "v8.1.0"
+  #   hooks:
+  #     - id: eslint
