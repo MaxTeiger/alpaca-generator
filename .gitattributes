@@ -1,63 +1,63 @@
-img/ears filter=lfs diff=lfs merge=lfs -text
-img/eyes filter=lfs diff=lfs merge=lfs -text
-img/hair filter=lfs diff=lfs merge=lfs -text
-img/accessories filter=lfs diff=lfs merge=lfs -text
-img/backgrounds filter=lfs diff=lfs merge=lfs -text
-img/leg filter=lfs diff=lfs merge=lfs -text
-img/mouth filter=lfs diff=lfs merge=lfs -text
-img/neck filter=lfs diff=lfs merge=lfs -text
-img/nose.png filter=lfs diff=lfs merge=lfs -text
-img/leg/game-console.png filter=lfs diff=lfs merge=lfs -text
-img/accessories/earings.png filter=lfs diff=lfs merge=lfs -text
-img/hair/quiff.png filter=lfs diff=lfs merge=lfs -text
-img/hair/short.png filter=lfs diff=lfs merge=lfs -text
-img/backgrounds/grey70.png filter=lfs diff=lfs merge=lfs -text
-img/backgrounds/red60.png filter=lfs diff=lfs merge=lfs -text
-img/eyes/naughty.png filter=lfs diff=lfs merge=lfs -text
-img/neck/bend-backward.png filter=lfs diff=lfs merge=lfs -text
-img/backgrounds/darkblue30.png filter=lfs diff=lfs merge=lfs -text
-img/backgrounds/grey80.png filter=lfs diff=lfs merge=lfs -text
-img/hair/bang.png filter=lfs diff=lfs merge=lfs -text
-img/backgrounds/blue50.png filter=lfs diff=lfs merge=lfs -text
-img/leg/tilt-forward.png filter=lfs diff=lfs merge=lfs -text
-img/leg/default.png filter=lfs diff=lfs merge=lfs -text
-img/backgrounds/blue60.png filter=lfs diff=lfs merge=lfs -text
-img/backgrounds/darkblue70.png filter=lfs diff=lfs merge=lfs -text
-img/backgrounds/yellow50.png filter=lfs diff=lfs merge=lfs -text
-img/mouth/astonished.png filter=lfs diff=lfs merge=lfs -text
-img/mouth/default.png filter=lfs diff=lfs merge=lfs -text
-img/backgrounds/yellow60.png filter=lfs diff=lfs merge=lfs -text
-img/ears/tilt-forward.png filter=lfs diff=lfs merge=lfs -text
-img/hair/default.png filter=lfs diff=lfs merge=lfs -text
-img/leg/cookie.png filter=lfs diff=lfs merge=lfs -text
-img/accessories/flower.png filter=lfs diff=lfs merge=lfs -text
-img/backgrounds/green70.png filter=lfs diff=lfs merge=lfs -text
-img/backgrounds/red50.png filter=lfs diff=lfs merge=lfs -text
-img/eyes/star.png filter=lfs diff=lfs merge=lfs -text
-img/hair/fancy.png filter=lfs diff=lfs merge=lfs -text
-img/backgrounds/darkblue50.png filter=lfs diff=lfs merge=lfs -text
-img/backgrounds/yellow70.png filter=lfs diff=lfs merge=lfs -text
-img/hair/curls.png filter=lfs diff=lfs merge=lfs -text
-img/mouth/eating.png filter=lfs diff=lfs merge=lfs -text
-img/ears/default.png filter=lfs diff=lfs merge=lfs -text
-img/eyes/smart.png filter=lfs diff=lfs merge=lfs -text
-img/neck/bend-forward.png filter=lfs diff=lfs merge=lfs -text
-img/eyes/panda.png filter=lfs diff=lfs merge=lfs -text
-img/hair/elegant.png filter=lfs diff=lfs merge=lfs -text
-img/backgrounds/blue70.png filter=lfs diff=lfs merge=lfs -text
-img/neck/default.png filter=lfs diff=lfs merge=lfs -text
-img/mouth/laugh.png filter=lfs diff=lfs merge=lfs -text
-img/accessories/glasses.png filter=lfs diff=lfs merge=lfs -text
-img/backgrounds/grey40.png filter=lfs diff=lfs merge=lfs -text
-img/backgrounds/red70.png filter=lfs diff=lfs merge=lfs -text
-img/leg/tilt-backward.png filter=lfs diff=lfs merge=lfs -text
-img/accessories/headphone.png filter=lfs diff=lfs merge=lfs -text
-img/backgrounds/green50.png filter=lfs diff=lfs merge=lfs -text
-img/backgrounds/green60.png filter=lfs diff=lfs merge=lfs -text
-img/mouth/tongue.png filter=lfs diff=lfs merge=lfs -text
-img/neck/thick.png filter=lfs diff=lfs merge=lfs -text
-img/ears/tilt-backward.png filter=lfs diff=lfs merge=lfs -text
-img/eyes/angry.png filter=lfs diff=lfs merge=lfs -text
-img/eyes/default.png filter=lfs diff=lfs merge=lfs -text
-img/leg/bubble-tea.png filter=lfs diff=lfs merge=lfs -text
-img/accessories/none.png filter=lfs diff=lfs merge=lfs -text
+# img/ears filter=lfs diff=lfs merge=lfs -text
+# img/eyes filter=lfs diff=lfs merge=lfs -text
+# img/hair filter=lfs diff=lfs merge=lfs -text
+# img/accessories filter=lfs diff=lfs merge=lfs -text
+# img/backgrounds filter=lfs diff=lfs merge=lfs -text
+# img/leg filter=lfs diff=lfs merge=lfs -text
+# img/mouth filter=lfs diff=lfs merge=lfs -text
+# img/neck filter=lfs diff=lfs merge=lfs -text
+# img/nose.png filter=lfs diff=lfs merge=lfs -text
+# img/leg/game-console.png filter=lfs diff=lfs merge=lfs -text
+# img/accessories/earings.png filter=lfs diff=lfs merge=lfs -text
+# img/hair/quiff.png filter=lfs diff=lfs merge=lfs -text
+# img/hair/short.png filter=lfs diff=lfs merge=lfs -text
+# img/backgrounds/grey70.png filter=lfs diff=lfs merge=lfs -text
+# img/backgrounds/red60.png filter=lfs diff=lfs merge=lfs -text
+# img/eyes/naughty.png filter=lfs diff=lfs merge=lfs -text
+# img/neck/bend-backward.png filter=lfs diff=lfs merge=lfs -text
+# img/backgrounds/darkblue30.png filter=lfs diff=lfs merge=lfs -text
+# img/backgrounds/grey80.png filter=lfs diff=lfs merge=lfs -text
+# img/hair/bang.png filter=lfs diff=lfs merge=lfs -text
+# img/backgrounds/blue50.png filter=lfs diff=lfs merge=lfs -text
+# img/leg/tilt-forward.png filter=lfs diff=lfs merge=lfs -text
+# img/leg/default.png filter=lfs diff=lfs merge=lfs -text
+# img/backgrounds/blue60.png filter=lfs diff=lfs merge=lfs -text
+# img/backgrounds/darkblue70.png filter=lfs diff=lfs merge=lfs -text
+# img/backgrounds/yellow50.png filter=lfs diff=lfs merge=lfs -text
+# img/mouth/astonished.png filter=lfs diff=lfs merge=lfs -text
+# img/mouth/default.png filter=lfs diff=lfs merge=lfs -text
+# img/backgrounds/yellow60.png filter=lfs diff=lfs merge=lfs -text
+# img/ears/tilt-forward.png filter=lfs diff=lfs merge=lfs -text
+# img/hair/default.png filter=lfs diff=lfs merge=lfs -text
+# img/leg/cookie.png filter=lfs diff=lfs merge=lfs -text
+# img/accessories/flower.png filter=lfs diff=lfs merge=lfs -text
+# img/backgrounds/green70.png filter=lfs diff=lfs merge=lfs -text
+# img/backgrounds/red50.png filter=lfs diff=lfs merge=lfs -text
+# img/eyes/star.png filter=lfs diff=lfs merge=lfs -text
+# img/hair/fancy.png filter=lfs diff=lfs merge=lfs -text
+# img/backgrounds/darkblue50.png filter=lfs diff=lfs merge=lfs -text
+# img/backgrounds/yellow70.png filter=lfs diff=lfs merge=lfs -text
+# img/hair/curls.png filter=lfs diff=lfs merge=lfs -text
+# img/mouth/eating.png filter=lfs diff=lfs merge=lfs -text
+# img/ears/default.png filter=lfs diff=lfs merge=lfs -text
+# img/eyes/smart.png filter=lfs diff=lfs merge=lfs -text
+# img/neck/bend-forward.png filter=lfs diff=lfs merge=lfs -text
+# img/eyes/panda.png filter=lfs diff=lfs merge=lfs -text
+# img/hair/elegant.png filter=lfs diff=lfs merge=lfs -text
+# img/backgrounds/blue70.png filter=lfs diff=lfs merge=lfs -text
+# img/neck/default.png filter=lfs diff=lfs merge=lfs -text
+# img/mouth/laugh.png filter=lfs diff=lfs merge=lfs -text
+# img/accessories/glasses.png filter=lfs diff=lfs merge=lfs -text
+# img/backgrounds/grey40.png filter=lfs diff=lfs merge=lfs -text
+# img/backgrounds/red70.png filter=lfs diff=lfs merge=lfs -text
+# img/leg/tilt-backward.png filter=lfs diff=lfs merge=lfs -text
+# img/accessories/headphone.png filter=lfs diff=lfs merge=lfs -text
+# img/backgrounds/green50.png filter=lfs diff=lfs merge=lfs -text
+# img/backgrounds/green60.png filter=lfs diff=lfs merge=lfs -text
+# img/mouth/tongue.png filter=lfs diff=lfs merge=lfs -text
+# img/neck/thick.png filter=lfs diff=lfs merge=lfs -text
+# img/ears/tilt-backward.png filter=lfs diff=lfs merge=lfs -text
+# img/eyes/angry.png filter=lfs diff=lfs merge=lfs -text
+# img/eyes/default.png filter=lfs diff=lfs merge=lfs -text
+# img/leg/bubble-tea.png filter=lfs diff=lfs merge=lfs -text
+# img/accessories/none.png filter=lfs diff=lfs merge=lfs -text
