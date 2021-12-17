@@ -23,6 +23,31 @@ randomButton.addEventListener("click", (e) => {
   randomGeneration();
 });
 
+let downloadButton = document.getElementById("download-button");
+// downloadButton.addEventListener("click", function () {
+//   html2canvas(document.querySelector(".alpacaImg")).then((canvas) => {
+//     let a = document.createElement("a");
+//     a.href = canvas
+//       .toDataURL("image/jpeg")
+//       .replace("image/jpeg", "image/octet-stream");
+
+//     a.download = "Alpaca.jpg";
+//     a.click();
+//   });
+// });
+
+downloadButton.addEventListener("click", function () {
+  html2canvas(document.getElementById("avatar-img")).then((canvas) => {
+    let a = document.createElement("a");
+    a.href = canvas
+      .toDataURL("image/jpeg")
+      .replace("image/jpeg", "image/octet-stream");
+
+    a.download = "Alpaca.jpg";
+    a.click();
+  });
+});
+
 // function to randomize avatar creation
 function randomGeneration() {
   // loop through primary buttons
@@ -56,7 +81,19 @@ function randomGeneration() {
 } // function random
 
 // function to download avatar
-function downloadAvatar() {}
+function downloadAvatar() {
+  download.addEventListener("click", function () {
+    html2canvas(document.querySelector(".alpacaImg")).then((canvas) => {
+      let a = document.createElement("a");
+      a.href = canvas
+        .toDataURL("image/jpeg")
+        .replace("image/jpeg", "image/octet-stream");
+
+      a.download = "Alpaca.jpg";
+      a.click();
+    });
+  });
+}
 
 function createEventListenerOnMenuButtons(activeButtonId) {
   var activeMenuId = "style-" + activeButtonId;
