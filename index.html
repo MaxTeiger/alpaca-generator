@@ -18,28 +18,59 @@
         <img
           src="img/backgrounds/blue50.png"
           alt="background"
-          class="background"
+          class="backgrounds"
+          id="avatar-backgrounds"
         />
-        <img src="img/neck/default.png" alt="neck" class="neck" />
-        <img src="img/nose.png" alt="nose" class="nose" />
-        <img src="img/mouth/default.png" alt="mouth" class="mouth" />
-        <img src="img/ears/default.png" alt="ears" class="ears" />
-        <img src="img/hair/default.png" alt="hair" class="hair" />
-        <img src="img/leg/default.png" alt="leg" class="leg" />
-        <img src="img/eyes/default.png" alt="eyes" class="eyes" />
         <img
-          src="img/accessories/earings.png"
+          src="img/neck/default.png"
+          alt="neck"
+          class="neck"
+          id="avatar-neck"
+        />
+        <img src="img/nose.png" alt="nose" class="nose" id="avatar-nose" />
+        <img
+          src="img/mouth/default.png"
+          alt="mouth"
+          class="mouth"
+          id="avatar-mouth"
+        />
+        <img
+          src="img/ears/default.png"
+          alt="ears"
+          class="ears"
+          id="avatar-ears"
+        />
+        <img
+          src="img/hair/default.png"
+          alt="hair"
+          class="hair"
+          id="avatar-hair"
+        />
+        <img src="img/leg/default.png" alt="leg" class="leg" id="avatar-leg" />
+        <img
+          src="img/eyes/default.png"
+          alt="eyes"
+          class="eyes"
+          id="avatar-eyes"
+        />
+        <img
+          src="img/accessories/none.png"
           alt="accessories"
-          class="accessories no-disp"
+          class="accessories"
+          id="avatar-accessories"
         />
       </div>
       <div class="alpaca-buttons">
+        <div class="other-buttons">
+          <button id="random-button">Random</button>
+          <button id="download-button">Download</button>
+        </div>
         <div class="primary-buttons">
           <div class="Title">
             <h2>Attributes</h2>
           </div>
           <div class="buttons-in">
-            <ul class="attributes_list">
+            <ul id="primary-buttons-list">
               <li>
                 <button id="backgrounds" class="primary_button">
                   Backgrounds
@@ -69,66 +100,124 @@
               id="style-backgrounds"
               data-menu="backgrounds"
             >
-              <button class="style-btn" data-name="blue50">Blue 50</button>
-              <button class="style-btn" data-name="blue60">Blue 60</button>
-              <button class="style-btn" data-name="blue70">Blue 70</button>
-              <button class="style-btn" data-name="darkblue30">
+              <button class="secondary-style-button active" data-name="blue50">
+                Blue 50
+              </button>
+              <button class="secondary-style-button" data-name="blue60">
+                Blue 60
+              </button>
+              <button class="secondary-style-button" data-name="blue70">
+                Blue 70
+              </button>
+              <button class="secondary-style-button" data-name="darkblue30">
                 Dark Blue 30
               </button>
-              <button class="style-btn" data-name="darkblue50">
+              <button class="secondary-style-button" data-name="darkblue50">
                 Dark Blue 50
               </button>
-              <button class="style-btn" data-name="darkblue70">
+              <button class="secondary-style-button" data-name="darkblue70">
                 Dark Blue 70
               </button>
-              <button class="style-btn" data-name="green50">Green 50</button>
-              <button class="style-btn" data-name="green60">Green 60</button>
-              <button class="style-btn" data-name="green70">Green 70</button>
-              <button class="style-btn" data-name="grey40">Grey 40</button>
-              <button class="style-btn" data-name="grey70">Grey 70</button>
-              <button class="style-btn" data-name="grey80">Grey 80</button>
-              <button class="style-btn" data-name="red50">red 50</button>
-              <button class="style-btn" data-name="red60">red 60</button>
-              <button class="style-btn" data-name="red70">red 70</button>
-              <button class="style-btn" data-name="yellow50">Yellow 50</button>
-              <button class="style-btn" data-name="yellow60">Yellow 60</button>
-              <button class="style-btn" data-name="yellow70">Yellow 70</button>
+              <button class="secondary-style-button" data-name="green50">
+                Green 50
+              </button>
+              <button class="secondary-style-button" data-name="green60">
+                Green 60
+              </button>
+              <button class="secondary-style-button" data-name="green70">
+                Green 70
+              </button>
+              <button class="secondary-style-button" data-name="grey40">
+                Grey 40
+              </button>
+              <button class="secondary-style-button" data-name="grey70">
+                Grey 70
+              </button>
+              <button class="secondary-style-button" data-name="grey80">
+                Grey 80
+              </button>
+              <button class="secondary-style-button" data-name="red50">
+                red 50
+              </button>
+              <button class="secondary-style-button" data-name="red60">
+                red 60
+              </button>
+              <button class="secondary-style-button" data-name="red70">
+                red 70
+              </button>
+              <button class="secondary-style-button" data-name="yellow50">
+                Yellow 50
+              </button>
+              <button class="secondary-style-button" data-name="yellow60">
+                Yellow 60
+              </button>
+              <button class="secondary-style-button" data-name="yellow70">
+                Yellow 70
+              </button>
             </div>
             <div
               class="button-container style-accessories collapsed"
               id="style-hair"
               data-menu="hair"
             >
-              <button class="style-btn" data-name="default">default</button>
-              <button class="style-btn" data-name="bang">Bang</button>
-              <button class="style-btn" data-name="curls">Curls</button>
-              <button class="style-btn" data-name="elegant">Elegant</button>
-              <button class="style-btn" data-name="fancy">Fancy</button>
-              <button class="style-btn" data-name="quiff">Quiff</button>
-              <button class="style-btn" data-name="short">Short</button>
+              <button class="secondary-style-button active" data-name="default">
+                default
+              </button>
+              <button class="secondary-style-button" data-name="bang">
+                Bang
+              </button>
+              <button class="secondary-style-button" data-name="curls">
+                Curls
+              </button>
+              <button class="secondary-style-button" data-name="elegant">
+                Elegant
+              </button>
+              <button class="secondary-style-button" data-name="fancy">
+                Fancy
+              </button>
+              <button class="secondary-style-button" data-name="quiff">
+                Quiff
+              </button>
+              <button class="secondary-style-button" data-name="short">
+                Short
+              </button>
             </div>
             <div
               class="button-container style-accessories collapsed"
               id="style-eyes"
               data-menu="eyes"
             >
-              <button class="style-btn" data-name="default">default</button>
-              <button class="style-btn" data-name="angry">Angry</button>
-              <button class="style-btn" data-name="naughty">Naughty</button>
-              <button class="style-btn" data-name="panda">Panda</button>
-              <button class="style-btn" data-name="smart">Smart</button>
-              <button class="style-btn" data-name="star">Star</button>
+              <button class="secondary-style-button active" data-name="default">
+                default
+              </button>
+              <button class="secondary-style-button" data-name="angry">
+                Angry
+              </button>
+              <button class="secondary-style-button" data-name="naughty">
+                Naughty
+              </button>
+              <button class="secondary-style-button" data-name="panda">
+                Panda
+              </button>
+              <button class="secondary-style-button" data-name="smart">
+                Smart
+              </button>
+              <button class="secondary-style-button" data-name="star">
+                Star
+              </button>
             </div>
             <div
               class="button-container style-accessories collapsed"
               id="style-ears"
               data-menu="ears"
             >
-              <button class="style-btn" data-name="default">default</button>
-              <button class="style-btn" data-name="tilt-backward">
+              <button class="secondary-style-button active" data-name="default">
+                default
+              </button>
+              <button class="secondary-style-button" data-name="tilt-backward">
                 Tilt Backward
               </button>
-              <button class="style-btn" data-name="tilt-forward">
+              <button class="secondary-style-button" data-name="tilt-forward">
                 Tilt Forward
               </button>
             </div>
@@ -137,45 +226,61 @@
               id="style-neck"
               data-menu="neck"
             >
-              <button class="style-btn" data-name="default">default</button>
-              <button class="style-btn" data-name="bend-backward">
+              <button class="secondary-style-button active" data-name="default">
+                default
+              </button>
+              <button class="secondary-style-button" data-name="bend-backward">
                 Bend Backward
               </button>
-              <button class="style-btn" data-name="bend-forward">
+              <button class="secondary-style-button" data-name="bend-forward">
                 Bend Forward
               </button>
-              <button class="style-btn" data-name="thick">Thick</button>
+              <button class="secondary-style-button" data-name="thick">
+                Thick
+              </button>
             </div>
             <div
               class="button-container style-accessories collapsed"
               id="style-mouth"
               data-menu="mouth"
             >
-              <button class="style-btn" data-name="default">default</button>
-              <button class="style-btn" data-name="astonished">
+              <button class="secondary-style-button active" data-name="default">
+                default
+              </button>
+              <button class="secondary-style-button" data-name="astonished">
                 Astonished
               </button>
-              <button class="style-btn" data-name="eating">Eating</button>
-              <button class="style-btn" data-name="laugh">Laugh</button>
-              <button class="style-btn" data-name="tongue">Tongue</button>
+              <button class="secondary-style-button" data-name="eating">
+                Eating
+              </button>
+              <button class="secondary-style-button" data-name="laugh">
+                Laugh
+              </button>
+              <button class="secondary-style-button" data-name="tongue">
+                Tongue
+              </button>
             </div>
             <div
               class="button-container style-accessories collapsed"
               id="style-leg"
               data-menu="leg"
             >
-              <button class="style-btn" data-name="default">default</button>
-              <button class="style-btn" data-name="bubble-tea">
+              <button class="secondary-style-button active" data-name="default">
+                default
+              </button>
+              <button class="secondary-style-button" data-name="bubble-tea">
                 Bubble Tea
               </button>
-              <button class="style-btn" data-name="cookie">Cookie</button>
-              <button class="style-btn" data-name="game-console">
+              <button class="secondary-style-button" data-name="cookie">
+                Cookie
+              </button>
+              <button class="secondary-style-button" data-name="game-console">
                 Game Console
               </button>
-              <button class="style-btn" data-name="tilt-backward">
+              <button class="secondary-style-button" data-name="tilt-backward">
                 Tilt Backward
               </button>
-              <button class="style-btn" data-name="tilt-forward">
+              <button class="secondary-style-button" data-name="tilt-forward">
                 Tilt Forward
               </button>
             </div>
@@ -184,11 +289,21 @@
               id="style-accessories"
               data-menu="accessories"
             >
-              <button class="style-btn" data-name="flower">Flower</button>
-              <button class="style-btn" data-name="earings">Earings</button>
-              <button class="style-btn" data-name="glasses">Glasses</button>
-              <button class="style-btn" data-name="headphone">Headphone</button>
-              <button class="style-btn" data-name="none">None</button>
+              <button class="secondary-style-button" data-name="flower">
+                Flower
+              </button>
+              <button class="secondary-style-button" data-name="earings">
+                Earings
+              </button>
+              <button class="secondary-style-button" data-name="glasses">
+                Glasses
+              </button>
+              <button class="secondary-style-button" data-name="headphone">
+                Headphone
+              </button>
+              <button class="secondary-style-button" data-name="none">
+                None
+              </button>
             </div>
           </div>
         </div>

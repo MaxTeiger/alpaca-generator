@@ -1,52 +1,131 @@
 "use strict";
 
-// // Avatar
-// const neck = document.querySelector(".neck");
-// const mouth = document.querySelector(".mouth");
-// const hair = document.querySelector(".hair");
-// const leg = document.querySelector(".leg");
-// const ears = document.querySelector(".ears");
-// const eyes = document.querySelector(".eyes");
-
-// // Buttons
-// const hairB = document.querySelector(".btn_hair");
-// const earsB = document.querySelector(".btn_ears");
-// const eyesB = document.querySelector(".btn_eyes");
-// const mouthB = document.querySelector(".btn_mouth");
-// const neckB = document.querySelector(".btn_neck");
-// const legB = document.querySelector(".btn_leg");
-// const accessoriesB = document.querySelector(".btn_accessories");
-// const backgroundB = document.querySelector(".btn_background");
-
-// function which triggers when a primary button is clicked
-// and populate secondary-buttons with appropriate ones
 let primaryBtns = document.querySelectorAll(".primary_button");
+let previousSelectedButtonId = localStorage.getItem("activeButtonId");
+
 primaryBtns.forEach((element) => {
   element.addEventListener("click", (e) => {
-    if (localStorage.getItem("currentButton")) {
-      document
-        .getElementById(localStorage.getItem("currentButton"))
-        .classList.toggle("active");
+    if (previousSelectedButtonId) {
+      hidePreviousMenuButton(previousSelectedButtonId);
     }
 
-    if (localStorage.getItem("currentMenu")) {
-      document
-        .getElementById(localStorage.getItem("currentMenu"))
-        .classList.toggle("collapsed");
-    }
+    displayMenuButton(e.target.id);
+    previousSelectedButtonId = e.target.id;
 
-    localStorage.setItem("currentButton", e.target.id);
-    localStorage.setItem("currentMenu", "style-" + e.target.id);
+    localStorage.setItem("activeButtonId", previousSelectedButtonId);
 
-    document
-      .getElementById(localStorage.getItem("currentButton"))
-      .classList.toggle("active");
-    document
-      .getElementById(localStorage.getItem("currentMenu"))
-      .classList.toggle("collapsed");
+    createEventListenerOnMenuButtons(previousSelectedButtonId);
   });
 });
 
-// fonction which populates secondary buttons regarding which
-// primary button has been clicked
-function displaySecondaryButtons(attribute) {}
+let randomButton = document.getElementById("random-button");
+randomButton.addEventListener("click", (e) => {
+  randomGeneration();
+});
+
+// function to randomize avatar creation
+function randomGeneration() {
+  // loop through primary buttons
+  var primaryButtons = Array.from(
+    document
+      .getElementById("primary-buttons-list")
+      .getElementsByTagName("button")
+  );
+  primaryButtons.forEach((primaryButton) => {
+    // loop through secondary buttons to remove 'active' class
+    var secondaryButtons = Array.from(
+      document
+        .getElementById("style-" + primaryButton.id)
+        .getElementsByTagName("button")
+    );
+    secondaryButtons.forEach((secondaryButton) => {
+      secondaryButton.classList.remove("active");
+    }); // secondary loop
+
+    // select a random button
+    var toActivateButton =
+      secondaryButtons[Math.floor(Math.random() * secondaryButtons.length)];
+    toActivateButton.classList.add("active");
+
+    var layerId = "avatar-" + primaryButton.id;
+    var newElement = toActivateButton.getAttribute("data-name");
+
+    console.log(layerId, newElement);
+    changeAvatarLayerSrcImg(layerId, newElement);
+  }); // primary loop
+} // function random
+
+// function to download avatar
+function downloadAvatar() {}
+
+function createEventListenerOnMenuButtons(activeButtonId) {
+  var activeMenuId = "style-" + activeButtonId;
+  var activeMenuButtons = Array.from(
+    document.getElementById(activeMenuId).getElementsByTagName("button")
+  );
+  var layerId = "avatar-" + activeButtonId;
+
+  activeMenuButtons.forEach((element) => {
+    element.addEventListener("click", (e) => {
+      var newElement = e.target.getAttribute("data-name");
+      changeAvatarLayerSrcImg(layerId, newElement);
+    }); // event listener
+  }); // forEach buttons
+} // function createEventListenerOnMenuButtons
+
+// Function which changes src img of the layer specified as
+// parameter
+function changeAvatarLayerSrcImg(layerId, newElement) {
+  var folderImg = layerId.substr(7);
+  document.getElementById(layerId).src =
+    "img/" + folderImg + "/" + newElement + ".png";
+}
+
+// function which hide secondary menu depending which primary
+// button is clicked
+function hidePreviousMenuButton(primaryButtonId) {
+  var secondaryMenuId = "style-" + primaryButtonId;
+  document.getElementById(secondaryMenuId).classList.add("collapsed");
+}
+// function which display secondary menu depending which primary
+// button is clicked
+function displayMenuButton(primaryButtonId) {
+  var secondaryMenuId = "style-" + primaryButtonId;
+
+  document.getElementById(primaryButtonId).classList.add("active");
+  document.getElementById(secondaryMenuId).classList.remove("collapsed");
+}
+
+// function which creates "clicked" event listener on secondary
+// buttons displayed
+
+// fonction which change avatar image according to active button
+function changeAvatar() {
+  var activeMenuId = localStorage.getItem("currentMenuId");
+  var menu = document.getElementById(activeMenuId);
+  var menuButtons = Array.from(menu.getElementsByTagName("button"));
+  var imgLayer = document.getElementsByClassName(
+    localStorage.getItem("currentButtonId")
+  );
+  var activeButton;
+
+  menuButtons.forEach((element) => {
+    if (element.classList.contains("active")) {
+      activeButton = element;
+    }
+  });
+
+  console.log(activeButton);
+  console.log(menuButtons);
+
+  menuButtons.forEach((element) => {
+    element.addEventListener("click", (e) => {
+      if (activeButton) {
+        activeButton.classList.toggle("active");
+      }
+
+      e.target.classList.toggle("active");
+      activeButton = e.target;
+    });
+  });
+}

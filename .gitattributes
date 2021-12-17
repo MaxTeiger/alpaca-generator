@@ -60,3 +60,4 @@ img/ears/tilt-backward.png filter=lfs diff=lfs merge=lfs -text
 img/eyes/angry.png filter=lfs diff=lfs merge=lfs -text
 img/eyes/default.png filter=lfs diff=lfs merge=lfs -text
 img/leg/bubble-tea.png filter=lfs diff=lfs merge=lfs -text
+img/accessories/none.png filter=lfs diff=lfs merge=lfs -text
