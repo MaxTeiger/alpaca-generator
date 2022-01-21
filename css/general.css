@@ -1,0 +1,20 @@
+:root {
+  --primary-color: #5596f6;
+  font-family: Roboto;
+  text-transform: uppercase;
+}
+
+body {
+  background-color: #fdf1b8;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container-main {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}

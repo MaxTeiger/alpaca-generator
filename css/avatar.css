@@ -1,0 +1,66 @@
+.avatar-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.avatar {
+  width: 720px;
+  height: 720px;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  position: relative;
+}
+
+.avatar .eyes {
+  grid-column: 1 / span 8;
+  grid-row: 1;
+  z-index: 2;
+}
+
+.avatar .backgroud {
+  grid-column: 1 / span 8;
+  grid-row: 1;
+  z-index: 1;
+}
+
+.avatar .neck {
+  grid-column: 1 / span 8;
+  grid-row: 1;
+  z-index: 1;
+}
+
+.avatar .nose {
+  grid-column: 1 / span 8;
+  grid-row: 1;
+  z-index: 1;
+}
+
+.avatar .mouth {
+  grid-column: 1 / span 8;
+  grid-row: 1;
+  z-index: 1;
+}
+
+.avatar .ears {
+  grid-column: 1 / span 8;
+  grid-row: 1;
+  z-index: 1;
+}
+
+.avatar .hair {
+  grid-column: 1 / span 8;
+  grid-row: 1;
+  z-index: 1;
+}
+
+.avatar .leg {
+  grid-column: 1 / span 8;
+  grid-row: 1;
+  z-index: 1;
+}
+
+.avatar .accessories {
+  grid-column: 1 / span 8;
+  grid-row: 1;
+  z-index: 1;
+}

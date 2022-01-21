@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/buttons.css" />
+    <link rel="stylesheet" href="css/avatar.css" />
+    <link rel="stylesheet" href="css/general.css" />
 
     <title>Alpacas Generator</title>
   </head>
@@ -14,80 +16,85 @@
       <h1>Alpacas Image Generator</h1>
     </div>
     <div class="container-main">
-      <div class="avatar" id="avatar-img">
-        <img
-          src="img/backgrounds/blue50.png"
-          alt="background"
-          class="backgrounds"
-          id="avatar-backgrounds"
-        />
-        <img
-          src="img/neck/default.png"
-          alt="neck"
-          class="neck"
-          id="avatar-neck"
-        />
-        <img src="img/nose.png" alt="nose" class="nose" id="avatar-nose" />
-        <img
-          src="img/mouth/default.png"
-          alt="mouth"
-          class="mouth"
-          id="avatar-mouth"
-        />
-        <img
-          src="img/ears/default.png"
-          alt="ears"
-          class="ears"
-          id="avatar-ears"
-        />
-        <img
-          src="img/hair/default.png"
-          alt="hair"
-          class="hair"
-          id="avatar-hair"
-        />
-        <img src="img/leg/default.png" alt="leg" class="leg" id="avatar-leg" />
-        <img
-          src="img/eyes/default.png"
-          alt="eyes"
-          class="eyes"
-          id="avatar-eyes"
-        />
-        <img
-          src="img/accessories/none.png"
-          alt="accessories"
-          class="accessories"
-          id="avatar-accessories"
-        />
+      <div class="avatar-container">
+        <div class="avatar" id="avatar-img">
+          <img
+            src="img/backgrounds/blue50.png"
+            alt="background"
+            class="backgrounds"
+            id="avatar-backgrounds"
+          />
+          <img
+            src="img/neck/default.png"
+            alt="neck"
+            class="neck"
+            id="avatar-neck"
+          />
+          <img src="img/nose.png" alt="nose" class="nose" id="avatar-nose" />
+          <img
+            src="img/mouth/default.png"
+            alt="mouth"
+            class="mouth"
+            id="avatar-mouth"
+          />
+          <img
+            src="img/ears/default.png"
+            alt="ears"
+            class="ears"
+            id="avatar-ears"
+          />
+          <img
+            src="img/hair/default.png"
+            alt="hair"
+            class="hair"
+            id="avatar-hair"
+          />
+          <img
+            src="img/leg/default.png"
+            alt="leg"
+            class="leg"
+            id="avatar-leg"
+          />
+          <img
+            src="img/eyes/default.png"
+            alt="eyes"
+            class="eyes"
+            id="avatar-eyes"
+          />
+          <img
+            src="img/accessories/none.png"
+            alt="accessories"
+            class="accessories"
+            id="avatar-accessories"
+          />
+        </div>
+        <div class="other-buttons">
+          <button id="random-button">🧮 Random</button>
+          <button id="download-button">⬇️ Download</button>
+        </div>
       </div>
       <div class="alpaca-buttons">
-        <div class="other-buttons">
-          <button id="random-button">Random</button>
-          <button id="download-button">Download</button>
-        </div>
         <div class="primary-buttons">
           <div class="Title">
             <h2>Attributes</h2>
           </div>
           <div class="buttons-in">
-            <ul id="primary-buttons-list">
-              <li>
-                <button id="backgrounds" class="primary_button">
-                  Backgrounds
-                </button>
-              </li>
-              <li><button id="ears" class="primary_button">Ears</button></li>
-              <li><button id="eyes" class="primary_button">Eyes</button></li>
-              <li><button id="hair" class="primary_button">Hair</button></li>
-              <li>
-                <button id="accessories" class="primary_button">
-                  Accessories
-                </button>
-              </li>
-              <li><button id="leg" class="primary_button">Leg</button></li>
-              <li><button id="mouth" class="primary_button">Mouth</button></li>
-              <li><button id="neck" class="primary_button">Neck</button></li>
-            </ul>
+            <div id="primary-buttons-list">
+              <button id="backgrounds" class="primary_button">
+                Backgrounds
+              </button>
+              <button id="ears" class="primary_button">Ears</button>
+              <button id="eyes" class="primary_button">Eyes</button>
+              <button id="hair" class="primary_button">Hair</button>
+
+              <button id="accessories" class="primary_button">
+                Accessories
+              </button>
+
+              <button id="leg" class="primary_button">Leg</button>
+              <button id="mouth" class="primary_button">Mouth</button>
+              <button id="neck" class="primary_button">Neck</button>
+            </div>
           </div>
         </div>
         <div class="secondary-buttons">

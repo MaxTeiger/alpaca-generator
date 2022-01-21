@@ -24,18 +24,6 @@ randomButton.addEventListener("click", (e) => {
 });
 
 let downloadButton = document.getElementById("download-button");
-// downloadButton.addEventListener("click", function () {
-//   html2canvas(document.querySelector(".alpacaImg")).then((canvas) => {
-//     let a = document.createElement("a");
-//     a.href = canvas
-//       .toDataURL("image/jpeg")
-//       .replace("image/jpeg", "image/octet-stream");
-
-//     a.download = "Alpaca.jpg";
-//     a.click();
-//   });
-// });
-
 downloadButton.addEventListener("click", function () {
   html2canvas(document.getElementById("avatar-img")).then((canvas) => {
     let a = document.createElement("a");
@@ -106,6 +94,10 @@ function createEventListenerOnMenuButtons(activeButtonId) {
     element.addEventListener("click", (e) => {
       var newElement = e.target.getAttribute("data-name");
       changeAvatarLayerSrcImg(layerId, newElement);
+      activeMenuButtons.forEach((btn) => {
+        btn.classList.remove("active");
+      });
+      element.classList.add("active");
     }); // event listener
   }); // forEach buttons
 } // function createEventListenerOnMenuButtons
@@ -122,6 +114,7 @@ function changeAvatarLayerSrcImg(layerId, newElement) {
 // button is clicked
 function hidePreviousMenuButton(primaryButtonId) {
   var secondaryMenuId = "style-" + primaryButtonId;
+  document.getElementById(primaryButtonId).classList.remove("active");
   document.getElementById(secondaryMenuId).classList.add("collapsed");
 }
 // function which display secondary menu depending which primary
@@ -136,33 +129,33 @@ function displayMenuButton(primaryButtonId) {
 // function which creates "clicked" event listener on secondary
 // buttons displayed
 
-// fonction which change avatar image according to active button
-function changeAvatar() {
-  var activeMenuId = localStorage.getItem("currentMenuId");
-  var menu = document.getElementById(activeMenuId);
-  var menuButtons = Array.from(menu.getElementsByTagName("button"));
-  var imgLayer = document.getElementsByClassName(
-    localStorage.getItem("currentButtonId")
-  );
-  var activeButton;
+// // fonction which change avatar image according to active button
+// function changeAvatar() {
+//   var activeMenuId = localStorage.getItem("currentMenuId");
+//   var menu = document.getElementById(activeMenuId);
+//   var menuButtons = Array.from(menu.getElementsByTagName("button"));
+//   var imgLayer = document.getElementsByClassName(
+//     localStorage.getItem("currentButtonId")
+//   );
+//   var activeButton;
 
-  menuButtons.forEach((element) => {
-    if (element.classList.contains("active")) {
-      activeButton = element;
-    }
-  });
+//   menuButtons.forEach((element) => {
+//     if (element.classList.contains("active")) {
+//       activeButton = element;
+//     }
+//   });
 
-  console.log(activeButton);
-  console.log(menuButtons);
+//   console.log(activeButton);
+//   console.log(menuButtons);
 
-  menuButtons.forEach((element) => {
-    element.addEventListener("click", (e) => {
-      if (activeButton) {
-        activeButton.classList.toggle("active");
-      }
+//   menuButtons.forEach((element) => {
+//     element.addEventListener("click", (e) => {
+//       if (activeButton) {
+//         activeButton.classList.toggle("active");
+//       }
 
-      e.target.classList.toggle("active");
-      activeButton = e.target;
-    });
-  });
-}
+//       e.target.classList.toggle("active");
+//       activeButton = e.target;
+//     });
+//   });
+// }
